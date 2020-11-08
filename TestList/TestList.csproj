@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LLWrapper\LLWrapper.vcxproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LLWrapper">
+      <HintPath>..\Debug\LLWrapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
